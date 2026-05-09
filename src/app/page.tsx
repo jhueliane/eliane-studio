@@ -369,7 +369,6 @@ export default function AgendamentoPage() {
                   <div>
                     <p className="ec-svc-title">{s.title}</p>
                     <p className="ec-svc-desc">{s.desc}</p>
-                    <span className="ec-svc-price">{s.detail}</span>
                   </div>
                 </div>
               ))}
