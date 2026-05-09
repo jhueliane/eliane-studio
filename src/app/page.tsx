@@ -43,14 +43,14 @@ export default function AgendamentoPage() {
   }, []);
 
   const isOcupado = (dia: string, hora: string) => {
-    const hoje = new Date();
-    const diaIndex = diasSemana.indexOf(dia);
-    const diff = (diaIndex - hoje.getDay() + 7) % 7 || 7;
-    const data = new Date(hoje);
-    data.setDate(hoje.getDate() + diff);
-    const dataStr = data.toISOString().split("T")[0];
-    return ocupados.some((o) => o.data === dataStr && o.hora === hora);
-  };
+  const hoje = new Date();
+  const diaIndex = diasSemana.indexOf(dia);
+  const diff = (diaIndex - hoje.getDay() + 7) % 7 || 7;
+  const data = new Date(hoje);
+  data.setDate(hoje.getDate() + diff);
+  const dataStr = data.toISOString().split("T")[0];
+  return ocupados.some((o) => o.data === dataStr && o.hora.startsWith(hora));
+};
 
   const handleAgendar = () => {
     if (!selectedSlot) { setTab("horarios"); return; }
