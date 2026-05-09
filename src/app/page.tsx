@@ -33,14 +33,15 @@ export default function AgendamentoPage() {
   const [ocupados, setOcupados] = useState<{ data: string; hora: string }[]>([]);
 
   useEffect(() => {
-    supabase
-      .from("agendamentos")
-      .select("data, hora")
-      .in("status", ["pendente", "confirmado"])
-      .then(({ data }) => {
-        if (data) setOcupados(data);
-      });
-  }, []);
+  supabase
+    .from("agendamentos")
+    .select("data, hora")
+    .in("status", ["pendente", "confirmado"])
+    .then(({ data }) => {
+      console.log("ocupados:", data);
+      if (data) setOcupados(data);
+    });
+}, []);
 
   const isOcupado = (dia: string, hora: string) => {
   const hoje = new Date();
