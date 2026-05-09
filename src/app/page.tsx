@@ -4,31 +4,44 @@ import { useState } from "react";
 const services = [
   {
     icon: "✦",
-    title: "Design",
-    desc: "Sobrancelhas alinhadas ao contorno do seu rosto.",
-    detail: "A partir de R$ 45",
+    title: "Limpeza Simples",
+    desc: "Limpeza e cuidado das sobrancelhas.",
   },
   {
     icon: "◈",
-    title: "Henna",
-    desc: "Preenchimento natural com efeito sofisticado.",
-    detail: "A partir de R$ 55",
+    title: "Design Personalizado",
+    desc: "Design alinhado ao contorno do seu rosto.",
   },
   {
     icon: "◇",
+    title: "Design com Henna",
+    desc: "Design com preenchimento natural e efeito sofisticado.",
+  },
+  {
+    icon: "◆",
+    title: "Design com Tintura",
+    desc: "Design com coloração de longa duração.",
+  },
+  {
+    icon: "◉",
     title: "Brow Lamination",
     desc: "Efeito moderno que realça cada fio.",
-    detail: "A partir de R$ 90",
+  },
+  {
+    icon: "◌",
+    title: "Buço",
+    desc: "Remoção de pelos com acabamento preciso.",
   },
 ];
 
 const horarios = [
-  { dia: "Segunda", slots: ["09:00", "10:30", "14:00", "16:00"] },
-  { dia: "Terça", slots: ["09:00", "11:00", "15:00"] },
-  { dia: "Quarta", slots: ["10:00", "13:00", "14:30", "17:00"] },
-  { dia: "Quinta", slots: ["09:30", "11:00", "16:00"] },
-  { dia: "Sexta", slots: ["09:00", "10:30", "14:00"] },
-  { dia: "Sábado", slots: ["09:00", "10:00", "11:00"] },
+  { dia: "Segunda", slots: ["13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "19:00", "19:30", "20:00", "20:30", "21:00"] },
+  { dia: "Terça", slots: ["13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "19:00", "19:30", "20:00", "20:30", "21:00"] },
+  { dia: "Quarta", slots: ["13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "19:00", "19:30", "20:00", "20:30", "21:00"] },
+  { dia: "Quinta", slots: ["13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "19:00", "19:30", "20:00", "20:30", "21:00"] },
+  { dia: "Sexta", slots: ["13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "19:00", "19:30", "20:00", "20:30", "21:00"] },
+  { dia: "Sábado", slots: ["13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00"] },
+  { dia: "Domingo", slots: ["13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00"] },
 ];
 
 export default function AgendamentoPage() {
