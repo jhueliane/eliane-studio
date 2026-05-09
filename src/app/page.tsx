@@ -32,7 +32,7 @@ const horarios = [
 ];
 
 export default function AgendamentoPage() {
-  const [tab, setTab] = useState(null); // null | 'servicos' | 'horarios'
+  const [tab, setTab] = useState<string | null>(null); // null | 'servicos' | 'horarios'
   const [selectedSlot, setSelectedSlot] = useState<{dia: string, hora: string} | null>(null);
   const waBase =
     "https://wa.me/5585999611885?text=Olá!%20Gostaria%20de%20agendar%20um%20horário";
