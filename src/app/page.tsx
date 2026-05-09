@@ -118,7 +118,7 @@ export default function AgendamentoPage() {
         .ec-slot { padding:5px 14px; border:1px solid #d4a84c; background:#fffbf3; color:#5a3a00; font-family:'Montserrat',sans-serif; font-size:11px; font-weight:500; cursor:pointer; border-radius:2px; transition:all 0.2s; letter-spacing:0.05em; }
         .ec-slot:hover { border-color:#7a5010; color:#3a1f00; background:#fdf3e0; }
         .ec-slot.selected { border-color:#7a5010; background:#fdf3e0; color:#3a1f00; font-weight:600; }
-        .ec-slot.ocupado { border-color:#c0392b; background:#fdf0ee; color:#c0392b; cursor:not-allowed; text-decoration:line-through; font-weight:600; }
+        .ec-slot.ocupado { border-color:#c0392b !important; background:#fdf0ee !important; color:#c0392b !important; cursor:not-allowed !important; text-decoration:line-through !important; font-weight:600 !important; }
         .ec-selected-info { background:#fdf3e0; border:1px solid #c9a84c; border-radius:2px; padding:0.75rem 1rem; margin-bottom:0.75rem; font-family:'Montserrat',sans-serif; font-size:11px; color:#5a3a00; font-weight:500; letter-spacing:0.05em; text-align:center; }
         .ec-footer { padding:1.25rem 2.5rem; border-top:1px solid #f0e6d0; text-align:center; background:#fdf8f0; font-family:'Montserrat',sans-serif; font-size:9px; letter-spacing:0.25em; color:#7a5010; text-transform:uppercase; font-weight:500; }
         .ec-input { width:100%; padding:0.75rem 1rem; border:1px solid #d4a84c; background:#fffbf3; color:#3a1f00; font-family:'Montserrat',sans-serif; font-size:12px; font-weight:500; border-radius:2px; outline:none; margin-bottom:0.75rem; box-sizing:border-box; transition:border-color 0.2s; }
