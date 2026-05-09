@@ -3,35 +3,13 @@ import { useState } from "react";
 import { supabase } from "./lib/supabase";
 
 const services = [
-  {
-    icon: "✦",
-    title: "Limpeza simples",
-  },
-  {
-    icon: "✦",
-    title: "Design personalizado",
-    desc: "Sobrancelhas alinhadas ao contorno do seu rosto.",
-  },
-  {
-    icon: "✦",
-    title: "Design com renna",
-  },
-  {
-    icon: "✦",
-    title: "Design com tintura",
-    desc: "Preenchimento natural com efeito sofisticado.",
-  },
-  {
-    icon: "✦",
-    title: "Brow Lamination",
-    desc: "Efeito moderno que realça cada fio.",
-  },
-  {
-    icon: "✦",
-    title: "Buço",
-  },
+  { icon: "✦", title: "Limpeza simples", desc: "", detail: "A partir de R$ 20" },
+  { icon: "✦", title: "Design personalizado", desc: "Sobrancelhas alinhadas ao contorno do seu rosto.", detail: "A partir de R$ 25" },
+  { icon: "✦", title: "Design com henna", desc: "", detail: "A partir de R$ 35" },
+  { icon: "✦", title: "Design com tintura", desc: "Preenchimento natural com efeito sofisticado.", detail: "A partir de R$ 45" },
+  { icon: "✦", title: "Brow Lamination", desc: "Efeito moderno que realça cada fio.", detail: "A partir de R$ 60" },
+  { icon: "✦", title: "Buço", desc: "", detail: "A partir de R$ 5" },
 ];
-
 const horarios = [
   { dia: "Segunda", slots: ["13:30", "14:30", "15:30", "19:00", "20:00"] },
   { dia: "Terça", slots: ["13:30", "14:30", "15:30", "19:00", "20:00"] },
