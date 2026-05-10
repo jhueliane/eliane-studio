@@ -6,7 +6,7 @@ const services = [
   { icon: "✦", title: "Limpeza simples", desc: "", detail: "A partir de R$ 20" },
   { icon: "✦", title: "Design personalizado", desc: "Sobrancelhas alinhadas ao contorno do seu rosto.", detail: "A partir de R$ 25" },
   { icon: "✦", title: "Design com henna", desc: "", detail: "A partir de R$ 35" },
-  { icon: "✦", title: "Design com tintura", desc: "Preenchimento natural com efeito sofisticado.", detail: "A partir de R$ 45" },
+  { icon: "✦", title: "Design com tintura", desc: "Preenchimento natural com efeito sofisticado.", detail: "A partir de R$ 50" },
   { icon: "✦", title: "Brow Lamination", desc: "Efeito moderno que realça cada fio.", detail: "A partir de R$ 60" },
   { icon: "✦", title: "Buço", desc: "", detail: "A partir de R$ 5" },
 ];
